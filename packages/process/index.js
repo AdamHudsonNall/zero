@@ -160,7 +160,7 @@ function startServer(entryFile, lambdaType, handler, isModule) {
     if (isModule) {
       resolve(app);
     } else {
-      var listener = app.listen(0, "127.0.0.1", () => {
+      var listener = app.listen(0, "0.0.0.0", () => {
         debug("listening ", lambdaType, listener.address().port);
         resolve(listener.address().port);
       });
