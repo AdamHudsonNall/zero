@@ -2,6 +2,7 @@ import os
 import imp
 import socket
 import sys
+import logging
 from flask import Flask
 from waitress import serve
 
@@ -29,6 +30,21 @@ def importFromURI(uri, absl=False):
 
 app = Flask(__name__)
 app.debug = True
+logHandler = logging.FileHandler('/app/log/app.log')
+logHandler.setLevel(logging.INFO)
+app.logger.addHandler(logHandler)
+app.logger.setLevel(logging.INFO)
+
+@app.errorhandler(HTTPException)
+def handle_http_exception(exc):
+    print("GLOBAL ERROR HANDLERS FOR FLASK", exc, flush=True)
+    return exec
+
+
+@app.errorhandler(Exception)
+def handle_exception(exc, message=None):
+    print("GLOBAL ERROR HANDLERS FOR FLASK", exc, flush=True)
+    return exec
 
 @app.route(sys.argv[1] + '/', defaults={'path': ''},  methods = ['GET', 'POST'])
 @app.route(sys.argv[1] +'/<path:path>', methods = ['GET', 'POST'])
