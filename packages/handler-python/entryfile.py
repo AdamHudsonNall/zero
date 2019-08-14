@@ -28,7 +28,7 @@ def importFromURI(uri, absl=False):
 			pass
 
 app = Flask(__name__)
-
+app.debug = True
 
 @app.route(sys.argv[1] + '/', defaults={'path': ''},  methods = ['GET', 'POST'])
 @app.route(sys.argv[1] +'/<path:path>', methods = ['GET', 'POST'])
