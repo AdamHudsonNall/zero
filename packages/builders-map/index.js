@@ -1,6 +1,6 @@
 module.exports = {
-  "lambda:html": require("zero-builder-html"),
-  "lambda:js": require("zero-builder-js"),
-  "lambda:react": require("zero-builder-react"),
-  "lambda:vue": require("zero-builder-vue")
+  "lambda:html": require("@darktower/zero-builder-html"),
+  "lambda:js": require("@darktower/zero-builder-js"),
+  "lambda:react": require("@darktower/zero-builder-react"),
+  "lambda:vue": require("@darktower/zero-builder-vue")
 };

@@ -3,9 +3,9 @@ const fs = require("fs");
 const path = require("path");
 const debug = require("debug")("core");
 const slash = require("../utils/fixPathSlashes");
-const handlers = require("zero-handlers-map");
+const handlers = require("@darktower/zero-handlers-map");
 const nodeignore = require("../utils/zeroignore");
-const pythonFirstRun = require("zero-handlers-map")["lambda:python"].firstrun;
+const pythonFirstRun = require("@darktower/zero-handlers-map")["lambda:python"].firstrun;
 var pythonFirstRunCompleted = false;
 
 async function getFiles(baseSrc) {
@@ -24,7 +24,7 @@ async function buildManifest(buildPath, oldManifest, fileFilter) {
   files = files.filter(
     f =>
       relativePath(f).indexOf("node_modules") === -1 &&
-      relativePath(f).indexOf("zero-builds") === -1
+      relativePath(f).indexOf("@darktower/zero-builds") === -1
   );
 
   var json = await Promise.all(

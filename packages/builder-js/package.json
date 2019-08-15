@@ -1,11 +1,14 @@
 {
   "name": "@darktower/zero-builder-js",
   "main": "index.js",
-  "version": "1.0.18-0",
+  "version": "1.0.25-0",
   "license": "Apache-2.0",
   "dependencies": {
-    "@darktower/zero-dep-tree-js": "^1.0.18-0",
+    "@darktower/zero-dep-tree-js": "^1.0.25-0",
     "parcel-bundler": "^1.11.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "9e577043290b2ad1205a24f14c4edf7329c6073d"
 }

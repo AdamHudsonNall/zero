@@ -1,10 +1,10 @@
-const getPackages = require("zero-dep-tree-js").getPackages;
+const getPackages = require("@darktower/zero-dep-tree-js").getPackages;
 const fs = require("fs");
 const os = require("os");
 var glob = require("fast-glob");
 const deepmerge = require("deepmerge");
 var { fork } = require("child_process");
-const commonDeps = require("zero-common-deps");
+const commonDeps = require("@darktower/zero-common-deps");
 var path = require("path");
 const debug = require("debug")("core");
 

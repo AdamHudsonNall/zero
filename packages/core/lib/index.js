@@ -90,7 +90,7 @@ function server(path) {
 
 // Build beforehand
 const fork = require("child_process").fork;
-const bundlerProgram = require.resolve("zero-builder-process");
+const bundlerProgram = require.resolve("@darktower/zero-builder-process");
 var getLambdaID = function(entryFile) {
   return require("crypto")
     .createHash("sha1")

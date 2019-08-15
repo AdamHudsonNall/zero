@@ -1,10 +1,13 @@
 {
   "name": "@darktower/zero-handler-html",
   "main": "index.js",
-  "version": "1.0.18-0",
+  "version": "1.0.25-0",
   "license": "Apache-2.0",
   "dependencies": {
-    "@darktower/zero-process": "^1.0.18-0"
+    "@darktower/zero-process": "^1.0.25-0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "9e577043290b2ad1205a24f14c4edf7329c6073d"
 }

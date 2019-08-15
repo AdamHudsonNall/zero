@@ -1,6 +1,6 @@
 {
   "name": "@darktower/zero",
-  "version": "1.0.18-0",
+  "version": "1.0.25-0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,12 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@darktower/zero-handlers-map": "^1.0.18-0",
+    "@darktower/zero-builder-process": "latest",
+    "@darktower/zero-builders-map": "latest",
+    "@darktower/zero-common-deps": "latest",
+    "@darktower/zero-dep-tree-js": "latest",
+    "@darktower/zero-handlers-map": "latest",
+    "@darktower/zero-static": "latest",
     "chokidar": "^2.0.4",
     "colors": "^1.3.3",
     "compression": "^1.7.3",
@@ -28,17 +33,15 @@
     "node-fetch": "^2.3.0",
     "npmi": "^4.0.0",
     "ora": "^3.0.0",
-    "yarn": "^1.15.2",
-    "zero-builder-process": "^1.0.14-alpha.0",
-    "zero-builders-map": "^1.0.14-alpha.0",
-    "zero-common-deps": "^1.0.16-alpha.3",
-    "zero-dep-tree-js": "^1.0.14-alpha.0",
-    "zero-static": "^1.0.10-alpha.8"
+    "yarn": "^1.15.2"
   },
   "bundledDependencies": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/AdamHudsonNall/zero.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "a834e7be9877ee36dea013b7c52a7e1dd4f6339c"
 }

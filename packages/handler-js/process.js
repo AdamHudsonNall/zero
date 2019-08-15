@@ -1,7 +1,7 @@
 // module.exports = {
 //   handler: require("./handler")
 // }
-const jsprocess = require("zero-process");
+const jsprocess = require("@darktower/zero-process");
 const handler = require("./handler");
 
 if (process.argv && process.argv.length === 8) {

@@ -35,10 +35,10 @@ logHandler.setLevel(logging.INFO)
 app.logger.addHandler(logHandler)
 app.logger.setLevel(logging.INFO)
 
-@app.errorhandler(HTTPException)
-def handle_http_exception(exc):
-    print("GLOBAL ERROR HANDLERS FOR FLASK", exc, flush=True)
-    return exec
+# @app.errorhandler(HTTPException)
+# def handle_http_exception(exc):
+#     print("GLOBAL ERROR HANDLERS FOR FLASK", exc, flush=True)
+#     return exec
 
 
 @app.errorhandler(Exception)
@@ -59,4 +59,4 @@ sock.bind(('localhost', 0))
 port = sock.getsockname()[1]
 sock.close()
 os.write(4, bytes(str(port) + '\n', 'utf8'))
-serve(app, host='0.0.0.0', port=port, _quiet=True)
+serve(app, host='0.0.0.0', port=port, _quiet=False, expose_tracebacks=True)

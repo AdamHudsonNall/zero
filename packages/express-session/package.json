@@ -1,7 +1,7 @@
 {
   "name": "@darktower/zero-express-session",
   "main": "index.js",
-  "version": "1.0.18-0",
+  "version": "1.0.25-0",
   "license": "Apache-2.0",
   "dependencies": {
     "connect-dynamodb": "^2.0.3",
@@ -11,6 +11,9 @@
     "express-session": "^1.15.6",
     "passport": "^0.4.0",
     "session-file-store": "^1.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "9e577043290b2ad1205a24f14c4edf7329c6073d"
 }

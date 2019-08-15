@@ -11,11 +11,11 @@
 const express = require("express");
 const compression = require("compression");
 const matchPath = require("./matchPath");
-const staticHandler = require("zero-static").handler;
+const staticHandler = require("@darktower/zero-static").handler;
 const path = require("path");
 const url = require("url");
-const handlers = require("zero-handlers-map");
-const builders = require("zero-builders-map");
+const handlers = require("@darktower/zero-handlers-map");
+const builders = require("@darktower/zero-builders-map");
 const fetch = require("node-fetch");
 const fs = require("fs");
 const debug = require("debug")("core");
@@ -23,7 +23,7 @@ const ora = require("ora");
 const del = require("del");
 const fork = require("child_process").fork;
 const forkasync = require("../utils/spawn-async");
-const bundlerProgram = require.resolve("zero-builder-process");
+const bundlerProgram = require.resolve("@darktower/zero-builder-process");
 
 var lambdaIdToPortMap = {};
 var lambdaIdToBundleInfo = {};

@@ -1,4 +1,4 @@
 module.exports = {
   bundler: require("./bundle"),
-  getRelatedFiles: require("zero-dep-tree-js").getRelativeFiles
+  getRelatedFiles: require("@darktower/zero-dep-tree-js").getRelativeFiles
 };

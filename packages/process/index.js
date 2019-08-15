@@ -11,7 +11,7 @@ const debug = require("debug")("core");
 
 const GLOBALS = require("./globals");
 //const compression = require("compression");
-const session = require("zero-express-session");
+const session = require("@darktower/zero-express-session");
 
 const vm = require("vm");
 var BASEPATH, ENTRYFILE, LAMBDATYPE, SERVERADDRESS, BUNDLEPATH, BUNDLEINFO;

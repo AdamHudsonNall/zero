@@ -37,7 +37,7 @@ module.exports = async (options, onWatchUpdate) => {
     }
 
     // don't copy zero-builds folder (only in dev mode)
-    if (ISDEV && relativePath.indexOf("zero-builds") !== -1) {
+    if (ISDEV && relativePath.indexOf("@darktower/zero-builds") !== -1) {
       return;
     }
 
@@ -55,7 +55,7 @@ module.exports = async (options, onWatchUpdate) => {
     const relativePath = path.relative(process.env.SOURCEPATH, from);
     if (
       relativePath.indexOf("node_modules") !== -1 ||
-      relativePath.indexOf("zero-builds") !== -1
+      relativePath.indexOf("@darktower/zero-builds") !== -1
     ) {
       return;
     }

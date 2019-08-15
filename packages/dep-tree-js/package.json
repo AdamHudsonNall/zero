@@ -1,7 +1,7 @@
 {
   "name": "@darktower/zero-dep-tree-js",
   "main": "index.js",
-  "version": "1.0.18-0",
+  "version": "1.0.25-0",
   "license": "Apache-2.0",
   "dependencies": {
     "@mdx-js/mdx": "^0.16.8",
@@ -9,5 +9,8 @@
     "konan": "^1.2.1",
     "typescript": "3.3.3333",
     "vue-template-compiler": "^2.6.10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

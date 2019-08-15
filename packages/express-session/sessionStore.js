@@ -47,7 +47,7 @@ module.exports = session => {
   else {
     const FileStore = require("session-file-store")(session);
     return new FileStore({
-      path: path.join(require("os").tmpdir(), "zero-sessions"),
+      path: path.join(require("os").tmpdir(), "@darktower/zero-sessions"),
       ttl: SESSION_TTL
     });
   }
