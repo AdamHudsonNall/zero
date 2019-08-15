@@ -1,10 +1,10 @@
 {
-  "name": "zero-builder-process",
-  "version": "1.0.14-alpha.0",
+  "name": "@darktower/zero-builder-process",
+  "version": "1.0.18-0",
   "description": "",
   "main": "index.js",
   "license": "Apache-2.0",
   "dependencies": {
-    "zero-builders-map": "^1.0.14-alpha.0"
+    "@darktower/zero-builders-map": "^1.0.18-0"
   }
 }

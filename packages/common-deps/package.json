@@ -1,7 +1,7 @@
 {
-  "name": "zero-common-deps",
+  "name": "@darktower/zero-common-deps",
   "main": "index.js",
-  "version": "1.0.16-alpha.3",
+  "version": "1.0.18-0",
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/core": "^7.2.2",

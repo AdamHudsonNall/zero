@@ -1,16 +1,16 @@
 {
-  "name": "zero-process",
+  "name": "@darktower/zero-process",
   "main": "index.js",
-  "version": "1.0.13-alpha.3",
+  "version": "1.0.18-0",
   "license": "Apache-2.0",
   "dependencies": {
+    "@darktower/zero-express-session": "^1.0.18-0",
     "body-parser": "^1.18.3",
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "node-fetch": "^2.3.0",
     "youch": "^2.0.10",
-    "youch-terminal": "^1.0.0",
-    "zero-express-session": "^1.0.13-alpha.3"
+    "youch-terminal": "^1.0.0"
   },
   "gitHead": "9e577043290b2ad1205a24f14c4edf7329c6073d"
 }
